@@ -3,12 +3,13 @@ import { AppComponent } from "./app/app.component";
 
 import { HeaderComponent } from "./app/shared/header.component";
 import { MenuComponent } from "./app/shared/menu.component";
-
+    
 import { environment } from "./app/environment";
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
-import { DasboardRoutes } from "./app/dashboard/dashboard.routes";
+import { DashboardRoutes } from "./app/dashboard/dashboard.routes";
+import { LogEntriesRoutes } from "./app/log-entries/log-entries.routes";
 
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
@@ -22,7 +23,8 @@ if (environment.production)
         MenuComponent
     ],
     imports: [BrowserModule, RouterModule.forRoot([
-        ...DasboardRoutes
+        ...DashboardRoutes,
+        ...LogEntriesRoutes
     ])],
     bootstrap: [AppComponent],
 })

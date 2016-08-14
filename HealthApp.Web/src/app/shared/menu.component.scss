@@ -1,23 +1,22 @@
 @import "../../assets/index";
 
-.menu {
-
-    ul {
-        list-style:none;
-        padding:0;
-        margin:0;
-    }
+ul {
+    list-style:none;
+    padding:0;
+    margin:0;
+}
     
-    a:link,
-    a:visited,
-    a {
-        text-decoration:none;
-        color:#272727;
-    }
-
+a {
+    text-decoration:none;
+    color:#272727;
 }
 
-.menu:after {
+a:link,
+a:visited {
+    color:#272727;
+}
+
+:host:after {
     content: " ";
     display:block;
     clear:both;

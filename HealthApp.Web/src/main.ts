@@ -8,6 +8,9 @@ import { AppComponent } from "./app/app.component";
 
 import { HeaderComponent } from "./app/shared/header.component";
 import { MenuComponent } from "./app/shared/menu.component";
+
+import { DashboardComponent } from "./app/dashboard/dashboard.component";
+import { AddLogEntryFormComponent } from "./app/log-entries/add-log-entry-form.component";
     
 import { environment } from "./app/environment";
 import { BrowserModule } from '@angular/platform-browser';
@@ -25,7 +28,10 @@ if (environment.production)
     declarations: [
         AppComponent,
         HeaderComponent,
-        MenuComponent
+        MenuComponent,
+
+        DashboardComponent,
+        AddLogEntryFormComponent
     ],
     imports: [BrowserModule, RouterModule.forRoot([
         ...DashboardRoutes,

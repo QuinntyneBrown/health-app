@@ -1,4 +1,5 @@
 import { Component, ChangeDetectionStrategy, Input, OnInit } from "@angular/core";
+import { Store } from "@ngrx/store";
 
 @Component({
     template: require("./add-log-entry-form.component.html"),
@@ -7,6 +8,10 @@ import { Component, ChangeDetectionStrategy, Input, OnInit } from "@angular/core
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AddLogEntryFormComponent implements OnInit { 
+    constructor(private store: Store<any>) {
+        
+    }
+
     ngOnInit() {
 
     }

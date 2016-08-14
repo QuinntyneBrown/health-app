@@ -1,4 +1,9 @@
-﻿import { NgModule, enableProdMode } from '@angular/core';
+﻿
+import { NgModule, enableProdMode } from '@angular/core';
+import { provideStore } from "@ngrx/store";
+
+import { logEntryAdded } from "./app/log-entries/shared/log-entry.reducers";
+
 import { AppComponent } from "./app/app.component";
 
 import { HeaderComponent } from "./app/shared/header.component";
@@ -27,6 +32,7 @@ if (environment.production)
         ...LogEntriesRoutes
     ])],
     bootstrap: [AppComponent],
+    providers: [provideStore({ logEntryAdded})]
 })
 export class AppModule { }
 

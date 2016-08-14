@@ -21,6 +21,8 @@ namespace HealthApp.Services
                 .FirstOrDefault(x => x.Id == request.Id && x.IsDeleted == false);
             if (entity == null) _repository.Add(entity = new Models.LogEntry());
             entity.Name = request.Name;
+            entity.Date = request.Date.Value;
+            entity.Weight = request.Weight.Value;
             _uow.SaveChanges();
             return new LogEntryAddOrUpdateResponseDto(entity);
         }

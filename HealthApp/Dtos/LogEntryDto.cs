@@ -1,3 +1,5 @@
+using System;
+
 namespace HealthApp.Dtos
 {
     public class LogEntryDto
@@ -15,5 +17,7 @@ namespace HealthApp.Dtos
 
         public int? Id { get; set; }
         public string Name { get; set; }
+        public DateTime? Date { get; set; }
+        public float? Weight { get; set; }
     }
 }

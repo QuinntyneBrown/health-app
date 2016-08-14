@@ -201,8 +201,10 @@
     <Compile Include="Dtos\RegistrationResponseDto.cs" />
     <Compile Include="Dtos\TokenDto.cs" />
     <Compile Include="Filters\HandleError.cs" />
+    <Compile Include="Hubs\LogEntryHub.cs" />
     <Compile Include="Infrastructure\Constants.cs" />
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Migrations\LogEntryConfiguration.cs" />
     <Compile Include="Models\LogEntry.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\LogEntryService.cs" />

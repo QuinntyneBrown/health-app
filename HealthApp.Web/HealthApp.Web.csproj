@@ -273,7 +273,10 @@
     </TypeScriptCompile>
     <TypeScriptCompile Include="src\app\log-entries\add-log-entry-form.component.ts" />
     <TypeScriptCompile Include="src\app\log-entries\log-entries.routes.ts" />
+    <TypeScriptCompile Include="src\app\log-entries\shared\log-entry.action-creator.ts" />
+    <TypeScriptCompile Include="src\app\log-entries\shared\log-entry.actions.ts" />
     <TypeScriptCompile Include="src\app\log-entries\shared\log-entry.model.ts" />
+    <TypeScriptCompile Include="src\app\log-entries\shared\log-entry.reducers.ts" />
     <TypeScriptCompile Include="src\app\log-entries\shared\log-entry.service.ts" />
     <TypeScriptCompile Include="src\app\shared\header.component.spec.ts">
       <DependentUpon>header.component.ts</DependentUpon>

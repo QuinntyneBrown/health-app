@@ -14,7 +14,7 @@ namespace HealthApp.Migrations
 
         protected override void Seed(HealthApp.Data.DataContext context)
         {
-
+            LogEntryConfiguration.Seed(context);
         }
     }
 }

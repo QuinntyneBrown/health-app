@@ -1,0 +1,37 @@
+@import "../../assets/index";
+
+.menu {
+
+    ul {
+        list-style:none;
+        padding:0;
+        margin:0;
+    }
+    
+    a:link,
+    a:visited,
+    a {
+        text-decoration:none;
+        color:#272727;
+    }
+
+}
+
+.menu:after {
+    content: " ";
+    display:block;
+    clear:both;
+}
+
+.menu-item {
+    position:relative;
+    float:left;
+    padding: 0 7.5px;
+}
+
+.menu-item-link,
+.menu-item-link:link,
+.menu-item-link:visited {
+    text-decoration:none;
+    color:#272727;
+}

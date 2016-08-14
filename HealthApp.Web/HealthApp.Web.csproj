@@ -219,6 +219,12 @@
     <Content Include="src\app\shared\header.component.scss">
       <DependentUpon>header.component.ts</DependentUpon>
     </Content>
+    <Content Include="src\app\shared\menu.component.html">
+      <DependentUpon>menu.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\shared\menu.component.scss">
+      <DependentUpon>menu.component.ts</DependentUpon>
+    </Content>
     <Content Include="webpack.config.js" />
     <Content Include="tsconfig.json" />
     <Content Include="typedoc.json" />
@@ -273,6 +279,10 @@
       <DependentUpon>header.component.ts</DependentUpon>
     </TypeScriptCompile>
     <TypeScriptCompile Include="src\app\shared\header.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\menu.component.spec.ts">
+      <DependentUpon>menu.component.ts</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\app\shared\menu.component.ts" />
     <TypeScriptCompile Include="src\main.ts" />
     <TypeScriptCompile Include="src\polyfills.ts" />
     <TypeScriptCompile Include="src\vendor.ts" />

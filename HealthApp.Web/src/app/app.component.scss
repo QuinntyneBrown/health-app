@@ -1,1 +1,10 @@
-@import "../assets/index";
+@import "../assets/index.scss";
+
+body, html {
+    color:#272727;
+}   
+
+.app {
+    max-width:1280px;
+    margin:0 auto;
+}

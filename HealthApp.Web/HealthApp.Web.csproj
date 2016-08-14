@@ -201,6 +201,18 @@
     <Content Include="src\app\app.component.scss">
       <DependentUpon>app.component.ts</DependentUpon>
     </Content>
+    <Content Include="src\app\dashboard\dashboard.component.html">
+      <DependentUpon>dashboard.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\dashboard\dashboard.component.scss">
+      <DependentUpon>dashboard.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\log-entries\add-log-entry-form.component.html">
+      <DependentUpon>add-log-entry-form.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\log-entries\add-log-entry-form.component.scss">
+      <DependentUpon>add-log-entry-form.component.ts</DependentUpon>
+    </Content>
     <Content Include="src\app\shared\header.component.html">
       <DependentUpon>header.component.ts</DependentUpon>
     </Content>
@@ -234,7 +246,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="e2e\" />
-    <Folder Include="src\app\log-entries\" />
     <Folder Include="src\assets\" />
   </ItemGroup>
   <ItemGroup>
@@ -242,7 +253,19 @@
       <DependentUpon>app.component.ts</DependentUpon>
     </TypeScriptCompile>
     <TypeScriptCompile Include="src\app\app.component.ts" />
+    <TypeScriptCompile Include="src\app\dashboard\dashboard.component.spec.ts">
+      <DependentUpon>dashboard.component.ts</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\app\dashboard\dashboard.component.ts" />
+    <TypeScriptCompile Include="src\app\dashboard\dashboard.routes.ts" />
     <TypeScriptCompile Include="src\app\environment.ts" />
+    <TypeScriptCompile Include="src\app\log-entries\add-log-entry-form.component.spec.ts">
+      <DependentUpon>add-log-entry-form.component.ts</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\app\log-entries\add-log-entry-form.component.ts" />
+    <TypeScriptCompile Include="src\app\log-entries\log-entries.routes.ts" />
+    <TypeScriptCompile Include="src\app\log-entries\shared\log-entry.model.ts" />
+    <TypeScriptCompile Include="src\app\log-entries\shared\log-entry.service.ts" />
     <TypeScriptCompile Include="src\app\shared\header.component.spec.ts">
       <DependentUpon>header.component.ts</DependentUpon>
     </TypeScriptCompile>

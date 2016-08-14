@@ -2,7 +2,7 @@
     entry: {
         'polyfills': './src/polyfills.ts',
         'vendor': './src/vendor.ts',
-        'app': './src/app/bootstrap.ts',
+        'app': './src/main.ts',
     },
     output: {
         path: "./dist",

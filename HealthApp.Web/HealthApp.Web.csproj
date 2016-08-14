@@ -223,6 +223,10 @@
     <Content Include="tsconfig.json" />
     <Content Include="typedoc.json" />
     <Content Include="typings.json" />
+    <Content Include="src\assets\index.scss" />
+    <Content Include="src\assets\_breakpoints.scss" />
+    <Content Include="src\assets\_varibles.scss" />
+    <Content Include="src\assets\_normalize.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -246,7 +250,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="e2e\" />
-    <Folder Include="src\assets\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="src\app\app.component.spec.ts">

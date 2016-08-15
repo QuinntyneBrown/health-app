@@ -1,8 +1,11 @@
-﻿module.exports = {
+﻿
+
+module.exports = {
     entry: {
         'polyfills': './src/polyfills.ts',
         'vendor': './src/vendor.ts',
         'app': './src/main.ts',
+        'about': './src/app/about/index.ts'
     },
     output: {
         path: "./dist",

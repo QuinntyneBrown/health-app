@@ -245,6 +245,7 @@
     <Content Include="src\assets\_breakpoints.scss" />
     <Content Include="src\assets\_varibles.scss" />
     <Content Include="src\assets\_normalize.scss" />
+    <Content Include="package.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -273,6 +274,8 @@
     <TypeScriptCompile Include="src\app\about\about.component.spec.ts">
       <DependentUpon>about.component.ts</DependentUpon>
     </TypeScriptCompile>
+    <TypeScriptCompile Include="src\app\about\about.routes.ts" />
+    <TypeScriptCompile Include="src\app\about\index.ts" />
     <TypeScriptCompile Include="src\app\app.component.spec.ts">
       <DependentUpon>app.component.ts</DependentUpon>
     </TypeScriptCompile>
@@ -287,19 +290,24 @@
       <DependentUpon>add-log-entry-form.component.ts</DependentUpon>
     </TypeScriptCompile>
     <TypeScriptCompile Include="src\app\log-entries\add-log-entry-form.component.ts" />
+    <TypeScriptCompile Include="src\app\log-entries\index.ts" />
     <TypeScriptCompile Include="src\app\log-entries\log-entries.routes.ts" />
+    <TypeScriptCompile Include="src\app\log-entries\shared\index.ts" />
     <TypeScriptCompile Include="src\app\log-entries\shared\log-entry.action-creator.ts" />
     <TypeScriptCompile Include="src\app\log-entries\shared\log-entry.actions.ts" />
     <TypeScriptCompile Include="src\app\log-entries\shared\log-entry.model.ts" />
     <TypeScriptCompile Include="src\app\log-entries\shared\log-entry.reducers.ts" />
     <TypeScriptCompile Include="src\app\log-entries\shared\log-entry.service.ts" />
+    <TypeScriptCompile Include="src\app\no-content\index.ts" />
     <TypeScriptCompile Include="src\app\no-content\no-content.component.spec.ts">
       <DependentUpon>no-content.component.ts</DependentUpon>
     </TypeScriptCompile>
+    <TypeScriptCompile Include="src\app\no-content\no-content.routes.ts" />
     <TypeScriptCompile Include="src\app\shared\header.component.spec.ts">
       <DependentUpon>header.component.ts</DependentUpon>
     </TypeScriptCompile>
     <TypeScriptCompile Include="src\app\shared\header.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\index.ts" />
     <TypeScriptCompile Include="src\app\shared\menu.component.spec.ts">
       <DependentUpon>menu.component.ts</DependentUpon>
     </TypeScriptCompile>

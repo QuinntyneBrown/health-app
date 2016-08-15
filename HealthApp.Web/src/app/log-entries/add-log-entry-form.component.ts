@@ -8,8 +8,8 @@ import { Store } from "@ngrx/store";
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AddLogEntryFormComponent implements OnInit { 
-    constructor(private store: Store<any>) {
-        
+    constructor(private _store: Store<any>) {
+
     }
 
     ngOnInit() {

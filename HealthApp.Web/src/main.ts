@@ -2,16 +2,18 @@
 import { NgModule, enableProdMode } from '@angular/core';
 import { provideStore } from "@ngrx/store";
 
-import { logEntryAdded } from "./app/log-entries/shared/log-entry.reducers";
-
 import { AppComponent } from "./app/app.component";
 
 import { HeaderComponent } from "./app/shared/header.component";
 import { MenuComponent } from "./app/shared/menu.component";
 
 import { DashboardComponent } from "./app/dashboard/dashboard.component";
+
 import { AddLogEntryFormComponent } from "./app/log-entries/add-log-entry-form.component";
-    
+import { LogEntryService } from "./app/log-entries/shared/log-entry.service";
+import { LogEntryActionCreator } from "./app/log-entries/shared/log-entry.action-creator";
+import { logEntryAdded } from "./app/log-entries/shared/log-entry.reducers";
+
 import { environment } from "./app/environment";
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
@@ -38,8 +40,11 @@ if (environment.production)
         ...LogEntriesRoutes
     ])],
     bootstrap: [AppComponent],
-    providers: [provideStore({ logEntryAdded})]
-})
+    providers: [
+        LogEntryActionCreator,
+        provideStore({ logEntryAdded }),
+        LogEntryService
+    ]})
 export class AppModule { }
 
 platformBrowserDynamic().bootstrapModule(AppModule);

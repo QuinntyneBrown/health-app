@@ -195,6 +195,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="src\app\about\about.component.html">
+      <DependentUpon>about.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\about\about.component.scss">
+      <DependentUpon>about.component.ts</DependentUpon>
+    </Content>
     <Content Include="src\app\app.component.html">
       <DependentUpon>app.component.ts</DependentUpon>
     </Content>
@@ -212,6 +218,12 @@
     </Content>
     <Content Include="src\app\log-entries\add-log-entry-form.component.scss">
       <DependentUpon>add-log-entry-form.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\no-content\no-content.component.html">
+      <DependentUpon>no-content.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\no-content\no-content.component.scss">
+      <DependentUpon>no-content.component.ts</DependentUpon>
     </Content>
     <Content Include="src\app\shared\header.component.html">
       <DependentUpon>header.component.ts</DependentUpon>
@@ -258,6 +270,9 @@
     <Folder Include="e2e\" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="src\app\about\about.component.spec.ts">
+      <DependentUpon>about.component.ts</DependentUpon>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="src\app\app.component.spec.ts">
       <DependentUpon>app.component.ts</DependentUpon>
     </TypeScriptCompile>
@@ -278,6 +293,9 @@
     <TypeScriptCompile Include="src\app\log-entries\shared\log-entry.model.ts" />
     <TypeScriptCompile Include="src\app\log-entries\shared\log-entry.reducers.ts" />
     <TypeScriptCompile Include="src\app\log-entries\shared\log-entry.service.ts" />
+    <TypeScriptCompile Include="src\app\no-content\no-content.component.spec.ts">
+      <DependentUpon>no-content.component.ts</DependentUpon>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="src\app\shared\header.component.spec.ts">
       <DependentUpon>header.component.ts</DependentUpon>
     </TypeScriptCompile>
@@ -289,6 +307,8 @@
     <TypeScriptCompile Include="src\main.ts" />
     <TypeScriptCompile Include="src\polyfills.ts" />
     <TypeScriptCompile Include="src\vendor.ts" />
+    <TypeScriptCompile Include="src\app\about\about.component.ts" />
+    <TypeScriptCompile Include="src\app\no-content\no-content.component.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

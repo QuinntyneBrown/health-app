@@ -23,6 +23,7 @@ import {
 import { environment } from "./app/environment";
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
@@ -39,7 +40,7 @@ if (environment.production)
         DashboardComponent,
         AddLogEntryFormComponent
     ],
-    imports: [BrowserModule, RouterModule.forRoot([
+    imports: [BrowserModule, FormsModule, ReactiveFormsModule, RouterModule.forRoot([
         ...DashboardRoutes,
         ...LogEntriesRoutes
     ])],

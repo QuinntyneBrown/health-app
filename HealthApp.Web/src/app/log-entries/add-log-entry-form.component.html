@@ -1,3 +1,10 @@
-<div class="add-log-entry-form">
+<section class="add-log-entry-form">
+    <h1>Add Log Entry Form</h1>
+    <form novalidate [formGroup]="form">
+        <input placeholder="Weight" formControlName="weight" />
+    </form>
 
-</div>
+    <div>
+        {{ form.value | json }}
+    </div>
+</section>

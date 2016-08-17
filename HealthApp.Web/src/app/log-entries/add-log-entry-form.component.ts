@@ -9,12 +9,11 @@ import { FormGroup, FormControl,  FormBuilder, Validators, FormArray } from "@an
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AddLogEntryFormComponent implements OnInit { 
-    constructor(private _store: Store<any>) {
-
-    }
+    constructor(private _store: Store<any>) {}
 
     public form = new FormGroup({
-        weight : new FormControl()
+        weight: new FormControl(),
+        date: new FormControl()
     });
 
     ngOnInit() {

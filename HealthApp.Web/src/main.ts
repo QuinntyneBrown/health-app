@@ -6,7 +6,6 @@ import { AppComponent } from "./app/app.component";
 
 import { HeaderComponent, MenuComponent } from "./app/shared";
 
-
 import {
     AddLogEntryFormComponent,  
     LogEntryService,

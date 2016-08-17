@@ -6,8 +6,4 @@ import { Component, ChangeDetectionStrategy, Input, OnInit } from "@angular/core
     selector: "h-dashboard",
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class DashboardComponent implements OnInit { 
-    ngOnInit() {
-
-    }
-}
+export class DashboardComponent {}

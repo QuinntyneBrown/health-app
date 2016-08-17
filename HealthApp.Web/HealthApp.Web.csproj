@@ -284,7 +284,8 @@
       <DependentUpon>dashboard.component.ts</DependentUpon>
     </TypeScriptCompile>
     <TypeScriptCompile Include="src\app\dashboard\dashboard.component.ts" />
-    <TypeScriptCompile Include="src\app\dashboard\dashboard.routes.ts" />
+    <TypeScriptCompile Include="src\app\dashboard\dashboard.module.ts" />
+    <TypeScriptCompile Include="src\app\dashboard\dashboard.routing.ts" />
     <TypeScriptCompile Include="src\app\environment.ts" />
     <TypeScriptCompile Include="src\app\log-entries\add-log-entry-form.component.spec.ts">
       <DependentUpon>add-log-entry-form.component.ts</DependentUpon>

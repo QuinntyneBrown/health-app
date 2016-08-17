@@ -6,10 +6,6 @@ import { AppComponent } from "./app/app.component";
 
 import { HeaderComponent, MenuComponent } from "./app/shared";
 
-import {
-    DashboardComponent,
-    DashboardRoutes
-} from "./app/dashboard";
 
 import {
     AddLogEntryFormComponent,  
@@ -31,17 +27,19 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 if (environment.production) 
     enableProdMode();
 
+
+/* Feature Modules */
+import { DashboardModule }  from './app/dashboard/dashboard.module';
+
 @NgModule({
     declarations: [
         AppComponent,
         HeaderComponent,
         MenuComponent,
-
-        DashboardComponent,
+                
         AddLogEntryFormComponent
     ],
-    imports: [BrowserModule, FormsModule, ReactiveFormsModule, RouterModule.forRoot([
-        ...DashboardRoutes,
+    imports: [DashboardModule, BrowserModule, FormsModule, ReactiveFormsModule, RouterModule.forRoot([
         ...LogEntriesRoutes
     ])],
     bootstrap: [AppComponent],

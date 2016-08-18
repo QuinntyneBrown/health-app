@@ -20,14 +20,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ShawONEX/corus-ui.git"
+    "url": ""
   },
-  "author": "Corus Entertainment",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ShawONEX/corus-ui/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/ShawONEX/corus-ui#readme",
+  "homepage": "",
   "dependencies": {
     "@angular/common": "2.0.0-rc.5",
     "@angular/compiler": "2.0.0-rc.5",

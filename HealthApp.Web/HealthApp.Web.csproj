@@ -291,7 +291,8 @@
       <DependentUpon>add-log-entry-form.component.ts</DependentUpon>
     </TypeScriptCompile>
     <TypeScriptCompile Include="src\app\log-entries\add-log-entry-form.component.ts" />
-    <TypeScriptCompile Include="src\app\log-entries\log-entries.routes.ts" />
+    <TypeScriptCompile Include="src\app\log-entries\log-entries.module.ts" />
+    <TypeScriptCompile Include="src\app\log-entries\log-entries.routing.ts" />
     <TypeScriptCompile Include="src\app\log-entries\shared\index.ts" />
     <TypeScriptCompile Include="src\app\log-entries\shared\log-entry.action-creator.ts" />
     <TypeScriptCompile Include="src\app\log-entries\shared\log-entry.actions.ts" />
@@ -312,6 +313,7 @@
       <DependentUpon>menu.component.ts</DependentUpon>
     </TypeScriptCompile>
     <TypeScriptCompile Include="src\app\shared\menu.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\shared.module.ts" />
     <TypeScriptCompile Include="src\main.ts" />
     <TypeScriptCompile Include="src\polyfills.ts" />
     <TypeScriptCompile Include="src\vendor.ts" />
@@ -333,7 +335,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>56622</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
